@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+
+int min(int arret[][10])
+{
+
+
+    return 0;
+}
+
+
+
+
+int main()
+{
+    int arret[10][10]={{1,10,2,4},{2,11,1,4,3,1,50,4},{3,11,2,1,4,7}};
+    int Porte_de_Creil[4]={1,10,2,4};     //adresse,ligne(binaire)(,voisin,distance)nombre de voisin
+    int G_Havez[8]={2,11,1,4,3,1,50,4};
+    int Hopital[6]={3,11,2,1,4,7};
+
+
+
+    int depart,arrive;
+    cout<<"départ:";
+    cin>>depart;
+    cout<<"arrivé:";
+    cin>>arrive;
+
+    int dist[10];
+    for(int i=0;i<10;i++)
+    {
+        dist[i]=1000;
+    }
+    dist[depart]=0;
+
+    bool ok;
+    while(ok==0)
+    {
+        int s1;
+        int min=1000,sommet=-1;
+        for(int i=0;i<10;i++)
+        {
+            if(dist[i]<min)
+            {
+                min=dist[i];
+                sommet=i;
+            }
+        }
+    }
+
+
+}
